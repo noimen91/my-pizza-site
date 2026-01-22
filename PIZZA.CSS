@@ -1,0 +1,61 @@
+body {
+     background-color: beige;
+    }
+
+    h1{color: green;
+    text-align: center;
+    }
+
+    p {
+    color: #333;       /* אפור כהה (יותר נעים לעין משחור מלא) */
+    font-size: 18px;   /* הגדלת הטקסט */
+    font-family: Arial, sans-serif; /* גופן נקי יותר */
+}
+
+img{
+border-radius: 15px; 
+
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;              /* הפקודה החדשה והמתקדמת */
+    justify-content: center;    /* ממרכז את הכל לאמצע */
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: white;   /* צבע רקע לבן לכרטיס כדי שיבלוט על הבז' */
+    width: 600px;              /* רוחב קבוע לכרטיס */
+    margin: 30px auto;         /* הטריק הגדול: 30 פיקסל מלמעלה, ו-AUTO בצדדים (ממרכז את הכרטיס!) */
+    padding: 20px;             /* מרווח פנימי כדי שהטקסט לא יידבק לקצוות הלבנים */
+    border-radius: 10px;       /* פינות מעוגלות לכל הכרטיס */
+    text-align: center;        /* מוודא שכל מה שבתוך הכרטיס (כולל התמונה) יהיה באמצע */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* בונוס איכותי: צל עדין מתחת לכרטיס */
+}
+
+/* התאמה למסכים קטנים (טלפונים) */
+@media (max-width: 620px) {
+    .card {
+        width: 90%;       /* במקום 600 פיקסלים קבועים, תפוס 90% מהרוחב הזמין */
+        margin: 10px auto; /* פחות רווח מלמעלה */
+    }
+
+    .navbar {
+        flex-direction: column; /* מסדר את הקישורים בטור (אחד מתחת לשני) במקום בשורה */
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;    /* רווחים מלמעלה ומלמטה בין הקישורים בטור */
+        display: block;    /* גורם לכל קישור לתפוס שורה משלו */
+    }
+}
